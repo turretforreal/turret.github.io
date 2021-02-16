@@ -1,0 +1,35 @@
+.nav {
+    display: flex;
+    background-color: white;
+    height: 5rem;
+    width: 100%;
+    padding: 0.2rem;
+    position: fixed;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav .navTabs {
+    display: flex;
+    height: auto;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav .navTabs div {
+    display: flex;
+    height: inherit;
+    width: 15rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .navTabs div .tabText {
+    font-size: 1.2rem;
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #4f7a9b;
+}
