@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>City of Mount Vernon</title>
-        <link href="./style.css" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    </head>
-    <body>
-        <div class="nav">
-            <img src="assets/logoText.png" id="navLogo"/>
-            <div class="navTabs">
-                <div><h2 class="tabText">Your Government</h2></div>
-                <div><h2 class="tabText">City Services</h2></div>
-                <div><h2 class="tabText">Community</h2></div>
+<head>
+    <link rel="stylesheet" href="style.css"/>
+    <script type="text/javascript" href="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+    <title>Word Count</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="headerBar">
+            <h1>Extraordinary Word Counter</h1>
+        </div>
+        <div class="inputContainer">
+                <textarea class="textInput" id="textBox"></textarea>
+                <button onclick="countWords()">Evaluate</button>
+                <script>
+                    function countWords() { 
+                        var text = document.getElementById("textBox").value; 
+ 
+                        let i = text.split(" ");
+                        let wordCount = 0;
+                        for (let a = 0; a < i.length; a++) {
+                            wordCount++;
+                        }
+                        
+                        let charCount = text.length
+                        document.getElementById("wordCount").innerHTML = wordCount;
+                        document.getElementById("charCount").innerHTML = charCount;
+                    }
+                </script>
+        </div>
+        <div class="outputContainer">
+            <div class="resultContainer">
+                <div class="label">
+                    <h2>Word Count:</h2>
+                </div>
+                <div class="output">
+                    <h2 id="wordCount"></h2>
+                </div>
+            </div>
+            <div class="resultContainer">
+                <div class="label">
+                    <h2>Character Count:</h2>
+                </div>
+                <div class="output">
+                    <h2 id="charCount"></h2>
+                </div>
+                </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
