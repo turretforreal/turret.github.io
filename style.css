@@ -1,6 +1,11 @@
+html {
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
 body {
     margin: 0px;
-    background-color: white;
+    background-color: rgb(233, 233, 233);
 }
 
 #header {
@@ -19,8 +24,8 @@ body {
 }
 
 #header > #FCA {
-    height: 85%;
-    margin-top: .5%;
+    height: 65%;
+    margin-top: 0;
     margin-left: 2vw;
 }
 
@@ -29,7 +34,7 @@ body {
     font-family: "Libre Franklin";
     font-weight: 600;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.7vw;
     margin-left: 5%;
 }
 
@@ -41,6 +46,7 @@ body {
     height: 91vh;
     background-color: rgb(233, 233, 233);
     padding-top: 1vh;
+    position: fixed;
 }
 
 .navElement {
@@ -54,6 +60,7 @@ body {
     letter-spacing: 1.75pt;
     font-family: "Libre Franklin";
     font-weight: 600;
+    font-size: 1vw;
     justify-content: center;
     padding-left: 5%;
 }
@@ -67,18 +74,21 @@ body {
     background-color: rgb(247, 247, 247);
     padding-left: 1vw;
     padding-right: 1vw;
+    margin-left: 20vw;
 }
 
 #content-wrapper > h2 {
     margin-bottom: 0.6rem;
     font-family: "Libre Franklin";
     font-weight: 600;
+    font-size: 1.5vw;
 }
 
 #content-wrapper > em {
     margin-bottom: 0.6rem;
     font-family: "Libre Franklin";
     font-style: italic;
+    font-size: 1vw;
     background-color: rgb(255, 255, 96);
 }
 
@@ -86,12 +96,14 @@ body {
     margin-bottom: 0.4rem;
     font-family: "Libre Franklin";
     font-weight: 600;
+    font-size: 1.2vw;
 }
 
 #content-wrapper > p {
     margin-top: 0;
     font-family: "Libre Franklin";
     font-weight: 300;
+    font-size: 1vw;
 }
 
 .active {
@@ -113,9 +125,45 @@ a:link {
     text-decoration: none;
     color: black;
     font-size: large;
+    font-size: 1.1vw;
   }
   
   a:active {
     text-decoration: none;
     color: black;
   }
+
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-top: 2vh;
+  }
+
+  th {
+      font-family: "Libre Franklin";
+      font-weight: 600;
+      font-size: 0.9vw;
+      padding-left: 5px;
+      padding-right: 5px;
+  }
+
+  td {
+      font-family: "Fira Sans Condensed";
+      text-align: center;
+      font-size: 0.9vw;
+  }
+
+
+  .text {
+      text-align: left;
+      padding-right: 2px;
+  }
+
+  
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
